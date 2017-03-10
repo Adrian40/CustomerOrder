@@ -1,0 +1,50 @@
+﻿@model CustomerOrderApplication.Models.Product
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Product</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.PName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PSize)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PSize)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PUnit)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PUnit)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Comments)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Comments)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ProductID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

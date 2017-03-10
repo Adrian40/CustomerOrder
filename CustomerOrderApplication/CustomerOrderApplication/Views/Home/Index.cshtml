@@ -1,0 +1,30 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+<div class="jumbotron">
+    <h1>Customer Order App</h1>
+    <p class="lead">Register orders, product and customers</p>    
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>@Html.ActionLink("Customers", "Index", "Customers")</h2>
+        <p>
+           
+        </p>
+    </div>
+    @*<div class="col-md-4">
+        <h2>@Html.ActionLink("Products", "Index", "Product")</h2>
+        <p></p>
+        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>@Html.ActionLink("Orders", "Index", "Orders")</h2>
+        <p></p>
+        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
+    </div>*@
+    <div class="col-md-4">
+        <h2>@Html.ActionLink("OrderItems", "Index", "OrderItems")</h2>
+        <p></p>
+    </div>
+</div>

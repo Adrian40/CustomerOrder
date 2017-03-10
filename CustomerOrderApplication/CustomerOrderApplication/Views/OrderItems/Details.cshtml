@@ -1,0 +1,42 @@
+﻿@model CustomerOrderApplication.Models.OrderItem
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>OrderItem</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Quantity)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Quantity)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Product.PName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Product.PName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Order.Comments)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Order.Comments)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.OrderItemID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
